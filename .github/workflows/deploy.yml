@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_reaquest:
-    branches:
-      - main
 
 permissions:
   id-token: write
@@ -34,4 +31,3 @@ Steps:
   - name: Upload files to S3
     run:
       aws s3 cp . s3://project2.asefthukom.net/ --recursive
-
